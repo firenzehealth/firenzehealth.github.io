@@ -5817,7 +5817,103 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+h1, h2, h3, h4, h5 {
+  color: #292931; }
+
+/*
+ * Globals
+ */
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff; }
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none;
+  /* Prevent inheritence from `body` */ }
+
+/*
+ * Base structure
+ */
+html,
 body {
-  background-color: #43739e;
-  color: white;
-  margin: 50px; }
+  height: 100%;
+  background-color: #F5F4F9;
+  min-height: 500px; }
+
+p {
+  color: #9999A0; }
+  p b {
+    color: #292931;
+    font-weight: normal; }
+
+#logo {
+  width: 27px;
+  height: 27px;
+  float: left;
+  margin-top: 8px;
+  margin-right: 14px; }
+  #logo svg path {
+    fill: #E96D6E; }
+
+h1, h2, h3 {
+  color: #292931; }
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+  /* For at least Firefox */
+  min-height: 100%; }
+
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top; }
+
+.cover-container {
+  margin-right: auto;
+  margin-left: auto; }
+
+/* Padding for spacing */
+.inner {
+  padding: 30px; }
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+/*
+ * Affix and center
+ */
+@media (min-width: 768px) and (min-height: 500px) {
+  /* Pull out the header and footer */
+  header {
+    position: fixed;
+    top: 0; }
+  footer {
+    position: fixed;
+    bottom: 0; }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle; }
+  /* Handle the widths */
+  header,
+  footer,
+  .cover-container {
+    width: 100%;
+    /* Must be percentage or pixels for horizontal alignment */ } }
+
+@media (min-width: 992px) {
+  header,
+  footer,
+  .cover-container {
+    width: 1100px; } }
