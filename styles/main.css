@@ -5847,6 +5847,7 @@ body {
   min-height: 500px; }
 
 p {
+  font-size: 1.2em;
   color: #9999A0; }
   p b {
     color: #292931;
@@ -5875,9 +5876,6 @@ h1, h2, h3, p {
 
 h1, h2, h3 {
   color: #292931; }
-
-h1 {
-  font-size: 5em; }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
@@ -5910,6 +5908,8 @@ h1 {
  * Affix and center
  */
 @media (min-width: 768px) and (min-height: 500px) {
+  h1 {
+    font-size: 4.8em; }
   /* Pull out the header and footer */
   header {
     position: fixed;
@@ -5919,7 +5919,8 @@ h1 {
     bottom: 0; }
   /* Start the vertical centering */
   .site-wrapper-inner {
-    vertical-align: middle; }
+    vertical-align: middle;
+    padding-bottom: 80px; }
   /* Handle the widths */
   header,
   footer,
