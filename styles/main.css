@@ -5876,6 +5876,9 @@ h1, h2, h3 {
 .inner {
   padding: 30px; }
 
+footer .inner {
+  padding-top: 6px; }
+
 .masthead-brand {
   margin-top: 10px;
   margin-bottom: 10px; }
@@ -5884,7 +5887,7 @@ h1, h2, h3 {
   background-color: #41414A;
   color: white; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (min-height: 600px) {
   h1 {
     font-size: 4.8em; }
   header {
