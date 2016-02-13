@@ -1,5 +1,5 @@
 {
-  "name": "gh-pages-boilerplate",
+  "name": "firenzehealth-com",
   "version": "0.0.1",
   "description": "Boilerplate with Bootstrap 3 for release as GitHub project page",
   "scripts": {
@@ -7,19 +7,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gronke/gh-pages-boilerplate.git"
+    "url": "git+https://github.com/chrisbrandin/firenzehealth-com.git"
   },
   "keywords": [
     "bootstrap",
     "livereload",
     "gh-pages"
   ],
-  "author": "Stefan Grönke <stefan@gronke.net>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/gronke/gh-pages-boilerplate/issues"
-  },
-  "homepage": "https://github.com/gronke/gh-pages-boilerplate",
+  "author": "Christoph Brandin <christoph@brandin.de>",
+  "license": "(c) 2016 Studio Brandin, all rights reserved",
+  "homepage": "https://github.com/chrisbrandin/firenzehealth-com",
   "dependencies": {
     "event-stream": "^3.3.2",
     "gulp": "^3.9.1",
