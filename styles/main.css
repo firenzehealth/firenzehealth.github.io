@@ -5861,8 +5861,23 @@ p {
   #logo svg path {
     fill: #E96D6E; }
 
+#logo-font {
+  width: 105px;
+  height: 26px;
+  float: left;
+  margin-top: 9px;
+  margin-right: 14px; }
+  #logo-font svg path {
+    fill: #292931; }
+
+h1, h2, h3, p {
+  font-family: Georgia, Helvetica, Arial, sans-serif; }
+
 h1, h2, h3 {
   color: #292931; }
+
+h1 {
+  font-size: 5em; }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
