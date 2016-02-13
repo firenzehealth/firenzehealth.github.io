@@ -121,6 +121,10 @@ h1, h2, h3 {
   margin-bottom: 10px;
 }
 
+::selection {
+	background-color: #41414A;
+	color: white;
+}
 
 /*
  * Affix and center
