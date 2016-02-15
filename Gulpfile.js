@@ -76,7 +76,7 @@ gulp.task('watch', function() {
 gulp.task('serve', function(event) {
   plugins.connect.server({
       root: 'dist/',
-      port: 8080,
+      port: 8082,
       livereload: true
   });
 });
