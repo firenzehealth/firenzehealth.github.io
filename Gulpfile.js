@@ -25,7 +25,7 @@ gulp.task('copy:images', function () {
 });
 
 gulp.task('copy:favicon', function () {
-  return gulp.src('favicon.ico')
+  return gulp.src('favicon{,/**}/*')
     .pipe(plugins.copy('dist/'));
 });
 
