@@ -5817,6 +5817,20 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+@font-face {
+  font-family: 'Apercu-Light';
+  src: url("../fonts/apercu_light.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/apercu_light.eot?#iefix") format("embedded-opentype"), url("../fonts/apercu_light.woff2") format("woff2"), url("../fonts/apercu_light.woff") format("woff"), url("../fonts/apercu_light.ttf") format("truetype"), url("../fonts/apercu_light.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'Burgess-Regular';
+  src: url("../fonts/burgess_regular-web.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/burgess_regular-web.eot?#iefix") format("embedded-opentype"), url("../fonts/burgess_regular-web.woff2") format("woff2"), url("../fonts/burgess_regular-web.woff") format("woff"), url("../fonts/burgess_regular-web.ttf") format("truetype"), url("../fonts/burgess_regular-web.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+
 html,
 body {
   height: 100%;
@@ -5824,9 +5838,12 @@ body {
   min-height: 500px; }
 
 h1, h2, h3, h4, h5 {
-  color: #292931; }
+  color: #292931;
+  font-family: 'Burgess-Regular', Georgia, serif;
+  line-height: 1.1em; }
 
 p {
+  font-family: 'Apercu-Light', Georgia, serif;
   font-size: 1.2em;
   color: #9999A0; }
   p b {
@@ -5850,12 +5867,6 @@ p {
   margin-right: 14px; }
   #logo-font svg path {
     fill: #292931; }
-
-h1, h2, h3, p {
-  font-family: Georgia, Helvetica, Arial, sans-serif; }
-
-h1, h2, h3 {
-  color: #292931; }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
