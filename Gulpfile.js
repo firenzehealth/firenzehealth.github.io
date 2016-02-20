@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var plugins = require('gulp-load-plugins')();
 var es = require('event-stream');
+var file = require('gulp-file')
 
 var config = {
   deploy: {
