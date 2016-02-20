@@ -1,3 +1,6 @@
+# :fire: Warning! Not serving from the gh-pages branch at present. :fire:
+ master branch controls everything! See http://stackoverflow.com/questions/29758952/have-github-pages-render-gh-pages-branch-rather-than-jekyll-content-on-master-br for fix
+
 # GitHub Pages Boilerplate
 
 - Bootstrap 3
