@@ -1,5 +1,25 @@
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap.scss";
 
+@font-face {
+  font-family: 'Apercu-Light';
+  src: url('../fonts/apercu_light.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/apercu_light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/apercu_light.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/apercu_light.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/apercu_light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/apercu_light.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Burgess-Regular';
+  src: url('../fonts/burgess_regular-web.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/burgess_regular-web.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/burgess_regular-web.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/burgess_regular-web.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/burgess_regular-web.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/burgess_regular-web.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
 $very-light-grey: #F5F4F9;
 $grey: #9999A0;
 $dark-grey: #292931;
@@ -13,9 +33,12 @@ body {
 
 h1, h2, h3, h4, h5 {
 	color: $dark-grey;
+  font-family: 'Burgess-Regular', Georgia, serif;
+  line-height: 1.1em;
 }
 
 p {
+  font-family: 'Apercu-Light', Georgia, serif;
 	font-size: 1.2em;
 	color: $grey;
 
@@ -53,14 +76,6 @@ p {
 			fill: #292931;
 		}
 	}
-}
-
-h1, h2, h3, p {
-	font-family: Georgia, Helvetica, Arial, sans-serif;
-}
-
-h1, h2, h3 {
-	color: $dark-grey;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
