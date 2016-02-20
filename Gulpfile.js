@@ -2,8 +2,18 @@ var gulp = require('gulp');
 var plugins = require('gulp-load-plugins')();
 var es = require('event-stream');
 
+var config = {
+  deploy: {
+    // Deploying to GitHub Pages? Set your site name here and Gulp will add a
+    // CNAME file with this entry. This lets you point your external page to
+    // GitHub Pages as a web host.
+    cname: 'www.firenzehealth.com'
+  },
+};
+
 gulp.task('deploy', ['build'], function() {
   return gulp.src('./dist/**/*')
+    .pipe(file('CNAME', config.deploy.cname))
     .pipe(plugins.ghPages());
 });
 
@@ -35,14 +45,14 @@ var htmlbuildJsPreprocessor = plugins.htmlbuild.preprocess.js(function (block) {
   var gulpSrc = function (opts) {
     var paths = es.through();
     var files = es.through();
-    
+
     paths.pipe(es.writeArray(function (err, srcs) {
       gulp.src(srcs, opts).pipe(files);
     }));
-    
+
     return es.duplex(paths, files);
   };
-   
+
   var jsBuild = es.pipeline(
     plugins.concat('main.js'),
     gulp.dest('dist/')
@@ -50,7 +60,7 @@ var htmlbuildJsPreprocessor = plugins.htmlbuild.preprocess.js(function (block) {
 
   block.pipe(gulpSrc())
   .pipe(jsBuild);
-  
+
   block.end('main.js');
 
 });
@@ -106,5 +116,3 @@ gulp.task('serve', function() {
 });
 
 gulp.task('default', ['serve']);
-
-
