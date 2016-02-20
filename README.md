@@ -23,6 +23,7 @@ git push origin master:master
 
 ## Install Dependencies
 ```bash
+npm -g install bower
 npm install
 bower install
 ```
