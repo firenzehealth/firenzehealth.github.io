@@ -36,12 +36,14 @@ h1, h2, h3, h4, h5 {
   font-family: 'Burgess-Regular', Georgia, serif;
   line-height: 1.1em;
   letter-spacing: 0.01em;
+  text-align: center;
 }
 
 p {
   font-family: 'Apercu-Light', Georgia, serif;
 	font-size: 1.2em;
 	color: $grey;
+  text-align: center;
 
 	b {
 		color: $dark-grey;
@@ -49,7 +51,20 @@ p {
 	}
 }
 
-#logo {
+header {
+  text-align: center;
+}
+
+.value-proposition {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.logo-brandmark {
 	width: 27px;
 	height: 27px;
 
@@ -64,7 +79,7 @@ p {
 	}
 }
 
-#logo-font {
+.logo-font {
 	width: 105px;
 	height: 26px;
 
@@ -102,6 +117,20 @@ p {
   padding: 30px;
 }
 
+footer {
+  padding-top: 24px;
+  width: 100%!important;
+  background: $dark-grey;
+  
+  p {
+    text-align: left;
+  }
+
+  b {
+    color: white;
+  }
+}
+
 footer .inner {
 	padding-top: 6px;
 }
@@ -121,16 +150,12 @@ footer .inner {
 
 
 	h1 {
-		font-size: 4.8em;
+		font-size: 3.4em;
 	}
 
   header {
     position: fixed;
     top: 0;
-  }
-  footer {
-    position: fixed;
-    bottom: 0;
   }
 
   .site-wrapper-inner {
