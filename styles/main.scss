@@ -39,6 +39,8 @@ h1, h2, h3, h4, h5 {
   text-align: center;
 }
 
+
+
 p {
   font-family: 'Apercu-Light', Georgia, serif;
 	font-size: 1.2em;
@@ -128,6 +130,15 @@ footer {
 
   b {
     color: white;
+  }
+
+  a {
+    text-decoration: none;
+    color: $grey; 
+  }
+  a:hover {
+    color: white;
+    text-decoration: none;
   }
 }
 
