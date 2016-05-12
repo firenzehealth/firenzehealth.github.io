@@ -5841,32 +5841,44 @@ h1, h2, h3, h4, h5 {
   color: #292931;
   font-family: 'Burgess-Regular', Georgia, serif;
   line-height: 1.1em;
-  letter-spacing: 0.01em; }
+  letter-spacing: 0.01em;
+  text-align: center; }
 
 p {
   font-family: 'Apercu-Light', Georgia, serif;
   font-size: 1.2em;
-  color: #9999A0; }
+  color: #9999A0;
+  text-align: center; }
   p b {
     color: #292931;
     font-weight: normal; }
 
-#logo {
+header {
+  text-align: center; }
+
+.value-proposition {
+  text-align: center;
+  margin-top: 24px; }
+
+.logo {
+  display: inline-block; }
+
+.logo-brandmark {
   width: 27px;
   height: 27px;
   float: left;
   margin-top: 8px;
   margin-right: 14px; }
-  #logo svg path {
+  .logo-brandmark svg path {
     fill: #E96D6E; }
 
-#logo-font {
+.logo-font {
   width: 105px;
   height: 26px;
   float: left;
   margin-top: 9px;
   margin-right: 14px; }
-  #logo-font svg path {
+  .logo-font svg path {
     fill: #292931; }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -5888,6 +5900,21 @@ p {
 .inner {
   padding: 30px; }
 
+footer {
+  padding-top: 24px;
+  width: 100% !important;
+  background: #292931; }
+  footer p {
+    text-align: left; }
+  footer b {
+    color: white; }
+  footer a {
+    text-decoration: none;
+    color: #9999A0; }
+  footer a:hover {
+    color: white;
+    text-decoration: none; }
+
 footer .inner {
   padding-top: 6px; }
 
@@ -5901,13 +5928,10 @@ footer .inner {
 
 @media only screen and (min-width: 768px) and (min-height: 600px) {
   h1 {
-    font-size: 4.8em; }
+    font-size: 3.4em; }
   header {
     position: fixed;
     top: 0; }
-  footer {
-    position: fixed;
-    bottom: 0; }
   .site-wrapper-inner {
     vertical-align: middle;
     padding-bottom: 80px; }
