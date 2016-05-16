@@ -15,7 +15,9 @@ var config = {
 gulp.task('deploy', ['build'], function() {
   return gulp.src('./dist/**/*')
     .pipe(file('CNAME', config.deploy.cname))
-    .pipe(plugins.ghPages());
+    .pipe(plugins.ghPages({
+      branch: 'master'
+    }));
 });
 
 gulp.task('clean', function () {

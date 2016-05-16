@@ -23,6 +23,7 @@
 $very-light-grey: #F5F4F9;
 $grey: #9999A0;
 $dark-grey: #292931;
+$red: #e85d5d;
 
 html,
 body {
@@ -53,13 +54,64 @@ p {
 	}
 }
 
+.small {
+  font-size: 1.1em;
+}
+
 header {
   text-align: center;
+}
+
+.cover-buttons {
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 12px;
+
+  .btn-default {
+    font-family: 'Apercu-Light', Georgia, serif;
+    font-size: 1.1em;
+    padding: 13px 24px;
+    border-radius: 2px;
+    background: transparent;
+    margin: 6px;
+  }
+
+  .sign-up, .sign-up:active {
+    background: $red;
+    border-color: $red;
+    color: white;
+    box-shadow: none;
+  }
+
+  .sign-up:hover {
+    color: $very-light-grey!important;
+  }
+
+  .login, .login:active {
+    background: transparent;
+    border-color: $dark-grey;
+    box-shadow: none;
+  }
+
+  .btn-default:hover {
+    color: $grey;
+  }
+
+  .btn-default:focus {
+    outline: none;
+  }
+
 }
 
 .value-proposition {
   text-align: center;
   margin-top: 24px;
+}
+
+.collaboration {
+  text-align: center;
+  margin-top: 48px;
+  margin-bottom: 24px;
 }
 
 .logo {
