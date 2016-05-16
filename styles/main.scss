@@ -52,6 +52,16 @@ p {
 		color: $dark-grey;
 		font-weight: normal;
 	}
+
+  a {
+    text-decoration: none;
+    color: $grey;
+  }
+
+  a:hover {
+    color: $dark-grey;
+    text-decoration: none;
+  }
 }
 
 .small {
