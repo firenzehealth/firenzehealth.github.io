@@ -5852,6 +5852,12 @@ p {
   p b {
     color: #292931;
     font-weight: normal; }
+  p a {
+    text-decoration: none;
+    color: #9999A0; }
+  p a:hover {
+    color: #292931;
+    text-decoration: none; }
 
 .small {
   font-size: 1.1em; }
