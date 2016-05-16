@@ -5853,12 +5853,47 @@ p {
     color: #292931;
     font-weight: normal; }
 
+.small {
+  font-size: 1.1em; }
+
 header {
   text-align: center; }
+
+.cover-buttons {
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 12px; }
+  .cover-buttons .btn-default {
+    font-family: 'Apercu-Light', Georgia, serif;
+    font-size: 1.1em;
+    padding: 13px 24px;
+    border-radius: 2px;
+    background: transparent;
+    margin: 6px; }
+  .cover-buttons .sign-up, .cover-buttons .sign-up:active {
+    background: #e85d5d;
+    border-color: #e85d5d;
+    color: white;
+    box-shadow: none; }
+  .cover-buttons .sign-up:hover {
+    color: #F5F4F9 !important; }
+  .cover-buttons .login, .cover-buttons .login:active {
+    background: transparent;
+    border-color: #292931;
+    box-shadow: none; }
+  .cover-buttons .btn-default:hover {
+    color: #9999A0; }
+  .cover-buttons .btn-default:focus {
+    outline: none; }
 
 .value-proposition {
   text-align: center;
   margin-top: 24px; }
+
+.collaboration {
+  text-align: center;
+  margin-top: 48px;
+  margin-bottom: 24px; }
 
 .logo {
   display: inline-block; }
